@@ -1,5 +1,5 @@
 'use strict';
-let Promise = require('promise');
+var Promise = require('promise');
 /**
  * @package mongoose-paginate
  * @param {Object} [query={}]
@@ -79,9 +79,9 @@ function paginate(query, options, callback) {
     if (typeof callback === 'function') {
       return callback(null, result);
     }
-    let promise = new Promise();
-    promise.resolve(result);
-    return promise;
+//     let promise = new Promise();
+//     promise.resolve(result);
+    return Promise.resolve(result);
   });
 }
 
