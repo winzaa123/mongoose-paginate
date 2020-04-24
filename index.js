@@ -1,5 +1,4 @@
 'use strict';
-var Promise = require('promise');
 /**
  * @package mongoose-paginate
  * @param {Object} [query={}]
